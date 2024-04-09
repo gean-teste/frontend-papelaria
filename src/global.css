@@ -96,3 +96,6 @@ body{
  display: flex;
  flex-direction: row;
     }
+    form{
+        filter: drop-shadow(2px  7px 2px black);
+    }
