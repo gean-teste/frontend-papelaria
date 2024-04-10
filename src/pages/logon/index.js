@@ -1,6 +1,6 @@
 import React from "react";
 import '../../global.css'
-import Logo from '../../assets/img/fundo.jpg'
+import Logo from '../../assets/img/papelaria.png'
 import {useNavigate} from 'react-router-dom'
 
 export default function Logon(){
@@ -11,6 +11,7 @@ export default function Logon(){
         navigate('/dashboard')//redirecion a para a home após o login 
         
    }
+  funa   
 
  return(
     <div className="logon-container"> 
