@@ -99,3 +99,31 @@ body{
     form{
         filter: drop-shadow(2px  7px 2px black);
     }
+    section{
+        margin-top: 10%;
+    }
+    img{
+        border-radius: 9%;
+    }   
+    .link{
+        display: flex;
+        width: 85%;
+        border-radius: 5px;
+        border: #a29d7f 1px solid;
+        color: #9c8680;
+        padding: 10px;
+        margin: auto;
+        margin-top: 5PX;
+        
+        justify-content: center;
+    }
+    NAV{
+        height: 90VH;
+    }
+    .link:hover{
+        background-color: #88a27f;
+        color: white;
+    }
+    .icons-menu{
+        margin-right: 10px;
+    }
