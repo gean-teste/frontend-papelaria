@@ -1,8 +1,8 @@
-export default function Menu(){
+export default function Menu({title}){
     return(
         <div>
 
-               <h1>Head</h1>
+               <h1>{title}</h1>
                
         </div>
     )

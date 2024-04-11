@@ -7,7 +7,7 @@ export default function Menu(){
              <nav>
                <h1>Menu</h1>
                <Link to="/listadashboard" className='link'><FiHome className='icons-menu' size={24}/>Home</Link>
-               <Link to="/listausuari" className='link'><FiUser className='icons-menu' size={24}/>Usuário</Link>
+               <Link to="/listausuarios" className='link'><FiUser className='icons-menu' size={24}/>Usuário</Link>
                <Link to="/listaproduto" className='link'><FiShoppingCart className='icons-menu' size={24}/>Produto</Link>
                <Link to="/listaentrada" className='link'><FiTag className='icons-menu' size={24}/>Entrada</Link>
                <Link to="/listaestoque" className='link'><FiTruck className='icons-menu' size={24}/>Estoque</Link>
