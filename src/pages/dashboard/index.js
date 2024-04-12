@@ -11,6 +11,7 @@ export default function Dashboard(){
         </div>
         <div className="main">
          <Head title="Home" />
+         
         </div>
 
  </div>
