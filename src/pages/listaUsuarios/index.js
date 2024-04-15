@@ -2,10 +2,12 @@ import React,{useState, useEffect} from "react";
 import '../../global.css'
 import Head from "../componentes/head"
 import Menu from "../componentes/menu"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FiEdit,FiTrash } from "react-icons/fi";
 
 export default function Listausuarios(){
+    const navigate =  useNavigate();
+
     const[usuario, setUsuarios] = useState([]);
 
     function mostrarusuarios(){
@@ -14,6 +16,7 @@ export default function Listausuarios(){
     }
     function editarusuario(id, nome){
          alert(`estou editando  o usuario id:${id} |-| do nome: ${nome}`);
+         navigate(`/editarusuario/${id}`)
     }
     function excluirusuario(id, nome){
          alert(`estou editando  o usuario id:${id} |-| do nome: ${nome}`);
