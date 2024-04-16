@@ -23,6 +23,7 @@ export default function Cadastrousuario(){
     localStorage.setItem("usuarios",JSON.stringify(banco));
     // window.location.reload();
     alert("deu certo!!!")
+  
     navigate("/listausuarios")
       }
 
