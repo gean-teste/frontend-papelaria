@@ -11,9 +11,12 @@ export default function Listausuarios(){
     const navigate =  useNavigate();
 
     const[usuario, setUsuarios] = useState([]);
+    const [quantidade,setquantidade]= useState();
 
     function mostrarusuarios(){
+      
         const banco = JSON.parse(localStorage.getItem("usuarios") || "[]");
+        setquantidade(banco.length)
         setUsuarios (banco);
     }
     function editarusuario(id, nome){
@@ -88,13 +91,15 @@ export default function Listausuarios(){
                             </td>
                         </tr>
                      )
+                    
                     })
-                     
+                    
+                    
                 }
-                
+                <th>total de usuarios: {quantidade}</th>
             </table>
         </div>
-
+: 
  </div>
 
     )
