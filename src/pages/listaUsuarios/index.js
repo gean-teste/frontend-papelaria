@@ -28,7 +28,17 @@ export default function Listausuarios(){
               buttons: [
                 {
                   label: 'sim, claro que sim, ue',
-                  onClick: () => alert('Click Yes')
+                  onClick: () => {
+                    const banco = JSON.parse(localStorage.getItem("usuarios") || "[]");
+                    const dadosvelhos = banco.filter( (linha) => linha.id !== id ); 
+                    localStorage.setItem("usuarios", JSON.stringify(dadosvelhos));
+                    alert(`usuario ${nome} excluido com sucesso`);
+                    mostrarusuarios();
+                    // if(nome === "gean"){
+                    //   alert("opa não pode excluir meu brodi")
+                      
+                    // }
+                  }
                 },
                 {
                   label: 'por que quer excluir então idiota!',
