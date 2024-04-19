@@ -18,6 +18,15 @@ export default function Cadastrousuario(){
   };
    const Salvardados =(e)=>{
     e.preventDefault();
+    if (!nome.trim() || !email.trim() || !senha.trim()) {
+      alert("Por favor, preencha todos os campos.");
+      return;
+  }
+
+  if (senha.length < 6) {
+      alert("A senha deve ter pelo menos 6 caracteres.");
+      return;
+  }
     const banco = JSON.parse(localStorage.getItem("usuarios") || "[]");
     banco.push(usuario);
     localStorage.setItem("usuarios",JSON.stringify(banco));
