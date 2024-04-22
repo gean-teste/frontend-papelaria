@@ -178,3 +178,48 @@ body{
         text-align: left;
         padding: 5px;
       }
+
+
+      /* sbdh */
+      
+      .ajuste-container {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border: solid 2px black;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .imagem {
+        width: 100px; 
+        height: auto; 
+        margin-right: 20px; 
+    }
+    
+    .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .content h1 {
+        margin: 0;
+        text-align: center;
+        
+    }
+    
+    button {
+        margin-left: auto;
+    }
+    .link-right {
+        margin-left: auto;
+    }
+    
+    
+      
+      
+      
+      
+      

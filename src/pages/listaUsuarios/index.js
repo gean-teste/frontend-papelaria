@@ -6,6 +6,7 @@ import Head from "../componentes/head"
 import Menu from "../componentes/menu"
 import { Link, useNavigate } from "react-router-dom";
 import { FiEdit,FiTrash } from "react-icons/fi";
+import Principal from "../componentes/principal"
 
 export default function Listausuarios(){
     const navigate =  useNavigate();
@@ -55,8 +56,10 @@ export default function Listausuarios(){
     useEffect(()=>{mostrarusuarios()},[])
     return( 
 
-        
+      <div className="ajuste">
+        <Principal/>
  <div className="dashboard-container"> 
+ 
         <div className="menu">
          <Menu/>
         </div>
@@ -100,6 +103,7 @@ export default function Listausuarios(){
             </table>
         </div>
 : 
+ </div>
  </div>
 
     )
