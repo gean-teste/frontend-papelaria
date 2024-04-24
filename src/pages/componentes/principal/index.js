@@ -9,7 +9,7 @@ export default function Principal(){
   
  <div className="ajuste">
     <div className="ajuste-container">
-    <img src={Logo}  width={50} height={50}/>
+    <img src={Logo}  className="logo-icon" />
                     <div className="content">
                         <h1>Papelaria do futuro</h1>
                         <Link to="/listadashboard"   className='link-right'><IoMdExit className='' size={44} />Saida</Link>
