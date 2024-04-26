@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import '../../global.css'
 import logo from '../../assets/img/logo1.png'
-import {useNavigate} from 'react-router-dom'
+import {useNavigate,Link} from 'react-router-dom'
 
-export default function Logon(){
+export default function Logon(){    
     const navigate = useNavigate();
 
     const [email,setEmail] = useState();
@@ -52,6 +52,7 @@ export default function Logon(){
                 <button className="button_login" type="submit">
                     Entrar
                 </button>
+                <Link to="/cadastrousuario" >Cadastro</Link>
             </form>
         </section>
     </div>
